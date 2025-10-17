@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body h1 {
+        color: green;
+        background-color: yellow;
+        display: inline-block;
+        width: 500px;
+        height: 100px;
+      }
+      span {
+        display: block;
+        background-color: blue;
+      }
+      table {
+        border: 1px solid black;
+        width: 500px;
+        border-collapse: collapse;
+        margin: auto;
+      }
+      table * {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: left;
+      }
+      table caption {
+        caption-side: top;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        background-color: blue;
+        color: wheat;
+      }
+      tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      tbody tr:nth-child(odd) {
+        background-color: #8fefe740;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>This is a heading</h1>
+    <span>John</span> -->
+
+    <table>
+      <thead>
+        <caption>
+          My Family
+        </caption>
+
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Peter</td>
+          <td>Griffin</td>
+          <td>41</td>
+        </tr>
+        <tr>
+          <td>Lois</td>
+          <td>Griffin</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>Joe</td>
+          <td>Swanson</td>
+          <td>39</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
