@@ -15,12 +15,7 @@ const transporter = nodemailer.createTransport({
 
 const options = {
   from: "podiousplus@gmail.com",
-  to: [
-    "faithdimma2@gmail.com",
-    "irufavour787@gmail.com",
-    "devfavour100@gmail.com",
-    "podiousplus@gmail.com",
-  ],
+  to: ["daren2track@gmail.com"],
   subject: "Congratulations! Urgent! and important!🎉🎉",
   html: "<h1>Welcome to NG-PaY</h1>",
 };
@@ -28,7 +23,7 @@ const options = {
 const sendMail = async () => {
   transporter.sendMail(options, (err, result) => {
     if (err) {
-      return console.log(err.message);
+      return console.log("maller err: ", err.message);
     }
     console.log(result);
   });
